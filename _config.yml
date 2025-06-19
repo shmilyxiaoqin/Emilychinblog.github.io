@@ -1,5 +1,15 @@
-title: Modernist theme
-description: Modernist is a theme for GitHub Pages.
+title: "wellcome to Emily's home"
+description: >-
+  一个90后的数字遗产.
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-modernist
+remote_theme: jekyll-theme-modernist
+github_username: shmilyxiaoqin
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+---
+
+---
+

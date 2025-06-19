@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body style="background-color: #f5f5f5;"> <!-- 设置页面整体背景为灰色 -->
+    <div class="wrapper">
+      <header class="site-header">
+        <h1 class="site-title">{{ site.title }}</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/pages/trave.md">见闻</a></li>
+            <li><a href="/pages/reading.md">阅读</a></li>
+            <li><a href="/pages/tech.md">IT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {% include about-card.html %}
+    </div>
+  </body>
+</html>

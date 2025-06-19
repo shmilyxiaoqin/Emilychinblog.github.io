@@ -1,0 +1,139 @@
+
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+.site-header {
+  position: sticky;
+  top: 0; /* 固定在顶部 */
+  z-index: 1000; /* 确保在其他内容之上 */
+  background-color: #EAEAEA; /* 可选：背景透明防止文字遮挡 */
+  padding: 10px 0;
+}
+
+.site-title {
+  color: #3B82F6; /* 蓝色标题 */
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 新增卡片样式 */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+body {
+  color: #1A1A1A;
+  background-color: #EAEAEA;
+  /* 默认浅色模式 */
+}
+
+.dark-mode {
+  color: #EAEAEA;
+  background-color: #121212;
+  /* 深色模式 */
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  /* 居中并设置下边距 */
+  padding: 20px;
+  background-color: #EAEAEA;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.card h1 {
+  position: absolute;
+  top: 20px;
+  /* 调整标题位置 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  background-color: #3B82F6;
+  /* 标题背景色 */
+  padding: 5px 15px;
+  border-radius: 4px;
+  z-index: 1;
+  /* 确保标题在上层 */
+}
+
+.card h1:hover {
+  background-color: #2563EB;
+  /* 悬停时颜色 */
+}
+
+.success {
+  color: #10B981;
+  /* 成功状态 */
+}
+
+.error {
+  color: #EF4444;
+  /* 错误状态 */
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  /* 靠右排列 */
+  gap: 20px;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
