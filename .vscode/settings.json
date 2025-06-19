@@ -1,0 +1,12 @@
+{
+    
+  // 配置默认浏览器（适用于大多数打开网页的场景）
+  "browser-preview.defaultBrowser": "chrome", // 可选: chrome, edge, firefox, opera等
+  
+  // 若使用Live Server扩展，配置其默认浏览器
+  "liveServer.settings.customBrowser": "chrome", // 可选: chrome, edge, firefox等
+  
+  // 若使用HTML Preview扩展，配置其默认浏览器
+  "html-preview.defaultBrowser": "chrome"
+
+}
